@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add to cart button</title>
+    <style>
+        .el1{
+            height: 400px;
+            width: 400px;
+            border: 2px solid black;
+            position: relative;
+            margin: auto;      
+        }
+        .el2{
+            width: 100%;
+            position: absolute;
+            bottom: -40px;
+            left: 0px;
+            background-color: black;
+            color: white;
+            text-align: center;
+            font-size: 30px;
+            opacity: 0;
+            transition: 1.5s;
+        }
+        .el1:hover .el2{
+            
+            bottom: 0px;
+            opacity: 1;
+        }
+    </style>
+</head>
+<body>
+    <div class="el1">
+        <img src="bike.jpg" alt="" height="100%" width="100%">
+        <input type="button" name="" value="Add to cart" class="el2">
+    </div>
+</body>
+</html>
