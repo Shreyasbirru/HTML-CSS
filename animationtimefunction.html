@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box{
+            height: 300px;
+            width: 700px;
+            border: 2px solid black;
+            position: relative;
+
+        }
+        .obj{
+            height: 150px;
+            width: 250px;
+            background-color: red;
+            position:absolute;
+            top: 75px;
+            animation: box 3s infinite;
+            animation-timing-function: ease;
+        }
+        @keyframes box {
+            from{
+                top: 75px;
+                left: 0px;
+            }to{
+                top: 75px;
+                left: 700px;
+            }
+            
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <div class="obj"></div>
+    </div>
+    <div class="box">
+        <div class="obj" style="animation-timing-function: ease-in;"></div>
+    </div>
+    <div class="box">
+        <div class="obj" style="animation-timing-function: ease-out;"></div>
+    </div>
+    <div class="box">
+        <div class="obj" style="animation-timing-function: ease-in-out;"></div>
+    </div>
+    <div class="box">
+        <div class="obj" style="animation-timing-function: linear;"></div>
+    </div>
+</body>
+</html>
